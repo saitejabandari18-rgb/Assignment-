@@ -65,14 +65,3 @@ if __name__ == "__main__":
     data = (
         "berlin:21.5, hamburg:18.0, berlin:24.0, munich:26.5, "
         "hamburg:17.5, berlin:19.0, munich:30.0"
-    )
-
-    log = parse_log(data)
-
-    print("Parsed log:", log)
-    print("Berlin average:", average_temp(log, "berlin"))
-    print("Hamburg average:", average_temp(log, "hamburg"))
-    print("Munich average:", average_temp(log, "munich"))
-    print("Unknown city:", average_temp(log, "london"))
-    print("Hottest city:", hottest_city(log))
-    print("Measurement counts:", measurement_counts(log))
