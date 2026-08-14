@@ -306,17 +306,3 @@ if __name__ == "__main__":
     print("Weak result:", weak_result)
 
 
-# ---------------------------------------------------------------
-# REAL TRANSCRIPT
-#
-# After running the program, paste ONE actual prompt and the
-# actual raw model response from your LM Studio run here.
-#
-# Do not use a made-up response.
-#
-# PROMPT:
-# [paste the actual prompt here]
-#
-# RAW MODEL REPLY:
-# [paste the exact raw reply here]
-# ---------------------------------------------------------------
