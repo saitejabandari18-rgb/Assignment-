@@ -1,5 +1,4 @@
 def workout_summary(name, weight_kg, *exercises, intensity=1.0, **details):
-
     if intensity <= 0:
         print("Error: intensity must be greater than 0.")
         return
@@ -50,25 +49,4 @@ if __name__ == "__main__":
     )
     print("Returned:", result)
 
-    print("\n----- Workout with details -----")
-    result = workout_summary(
-        "Maria",
-        60,
-        ("Running", 20),
-        ("Squats", 15),
-        ("Push-ups", 10),
-        intensity=1.2,
-        location="gym",
-        coach="Maria",
-        day="Monday"
-    )
-    print("Returned:", result)
-
-    print("\n----- Invalid intensity -----")
-    result = workout_summary(
-        "Alex",
-        70,
-        ("Running", 30),
-        intensity=0
-    )
-    print("Returned:", result)
+    print("\n----- Workout with details
