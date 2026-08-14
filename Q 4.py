@@ -79,7 +79,6 @@ class House:
 
 # Demo
 if __name__ == "__main__":
-
     lamp = Device("Lamp", "living room", 12)
     tv = Device("TV", "living room", 100)
     fridge = Device("Fridge", "kitchen", 150)
@@ -94,37 +93,4 @@ if __name__ == "__main__":
     smart_lamp2 = SmartLamp(
         "Smart Lamp 2",
         "kitchen",
-        20,
-        60
-    )
-
-    house = House()
-
-    house.add(lamp)
-    house.add(tv)
-    house.add(fridge)
-    house.add(smart_lamp1)
-    house.add(smart_lamp2)
-
-    # Duplicate device
-    duplicate_lamp = Device("Lamp", "living room", 20)
-    house.add(duplicate_lamp)
-
-    print("Lamp:", lamp)
-    print("Smart lamp:", smart_lamp1)
-
-    print("Lamp == duplicate:", lamp == duplicate_lamp)
-
-    print("Lamp consumption:", lamp.daily_kwh(5), "kWh")
-
-    smart_lamp1.dim(30)
-    print("After dimming:", smart_lamp1)
-
-    print("Devices in living room:")
-
-    for device in house.devices_in("living room"):
-        print(device)
-
-    print("Power-hungriest:", house.power_hungriest())
-
-    print("Number of devices:", len(house))
+        20
